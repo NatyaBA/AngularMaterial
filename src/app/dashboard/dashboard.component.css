@@ -1,0 +1,23 @@
+  h2 {
+    text-align: center;
+  }  
+  a {       
+    font-size: 1.2rem;
+    text-decoration: none;    
+    color: #fff;
+    text-align: center;       
+  }
+  mat-grid-tile {
+    background-color: #3f525c;    
+  }
+  .mat-grid-list {
+    row-gap: 100px; 
+  }
+  @media (min-width: 600px) {
+    a {      
+      box-sizing: content-box;
+    }
+  }  
+  .shadow :hover {
+    background-color: #000;
+  }

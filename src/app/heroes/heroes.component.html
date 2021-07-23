@@ -1,0 +1,28 @@
+<h2>My Heroes</h2>
+<div class="container">
+<mat-list role="list" class="heroes">
+  <mat-list-item role="listitem" *ngFor="let hero of heroes">     
+     <span class="badge">{{hero.id}}</span> 
+      <a routerLink = "/detail/{{hero.id}}">
+        {{hero.name}} 
+      </a> 
+      <button class="delete" title="delete hero" mat-button color="primary"(click)="delete(hero)">x</button>  
+      
+    
+  </mat-list-item>
+ 
+</mat-list>
+<div>
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <mat-label>Hero name: </mat-label>
+    <input matInput placeholder="Enter hero name" #heroName id="new-hero">
+  </mat-form-field>
+  <button class="add-button" mat-raised-button matSuffix (click)="add(heroName.value); heroName.value=''">
+    Add hero
+  </button>  
+</form> 
+</div>
+</div>
+
+
